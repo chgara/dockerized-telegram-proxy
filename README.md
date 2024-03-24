@@ -1,6 +1,24 @@
-# MTProxy Docker Setup
+# Dockerized setup for Telegram MTProxy
 
 This repository contains a Docker setup for running an MTProxy server. MTProto Proxy is a protocol designed for accessing Telegram where it might be blocked or restricted. This setup allows you to deploy your own MTProxy instance quickly and securely.
+
+The resulted docker image can be runed easily in services like: AWS, Azure, Google Cloud, Digital Ocean
+
+## Prebuilt image usage
+
+Thus is the (link)[] to the image built with the Dockerfile provided in the repo.
+
+In any provider service you can put the link and the following parameters and you should have running your own proxy
+
+   ```bash
+   docker run -d --name mtproxy -p 443:443 -p 8888:8888 mtproxy
+   ```
+
+To see the generated ***SECTRET*** for the Proxy, you only need to check the logs of the container, it may depend on the service provider you use, but with plain docker is:
+
+```bash
+   docker logs mtproxy
+```
 
 ## Quick Start
 
