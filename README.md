@@ -6,7 +6,7 @@ The resulted docker image can be ran easily in services like: AWS, Azure, Google
 
 ## Prebuilt image usage
 
-Thus is the (link)[] to the image built with the Dockerfile provided in the repo.
+Thus is the [link]() to the image built with the Dockerfile provided in the repo.
 
 In any provider service you can put the image link, the following parameters and you should have running your own proxy
 
